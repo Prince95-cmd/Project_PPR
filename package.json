@@ -1,0 +1,26 @@
+{
+  "name": "project_ppr",
+  "version": "1.0.0",
+  "description": "Payment, payout and refund integration(paystack)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev src/server.ts"
+  },
+  "author": "kzee technologies",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.20.1",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
