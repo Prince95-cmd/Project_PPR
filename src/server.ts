@@ -1,10 +1,13 @@
 import app from './app';
 import {Request, Response, NextFunction} from 'express';
+import connectMongoDB from './config/db';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 const PORT = parseInt(process.env.PORT || "10000", 10 );
+
+connectMongoDB();
 
 interface AppError extends Error {
     status?: number;
