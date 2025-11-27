@@ -1,11 +1,10 @@
-import express, {Request, Response, NextFunction} from 'express';
+import app from './app';
+import {Request, Response, NextFunction} from 'express';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-const app = express();
-
-const PORT = process.env.PORT || 10000;
+const PORT = parseInt(process.env.PORT || "10000", 10 );
 
 interface AppError extends Error {
     status?: number;
